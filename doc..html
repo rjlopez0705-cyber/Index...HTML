@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container-fluid {
+            margin-bottom: 50px;
+        }
+        .layout-section {
+            background-color: #eeeeee;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+        }
+        /* Changing column color to gray as requested */
+        .col-box {
+            background-color: #808080; /* Gray color */
+            color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+            border: 1px solid #666;
+        }
+        .card-custom {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        .card-num {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .btn-custom {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Bootstrap Grid Responsive</h2>
+        <div class="layout-section">
+            <h4>Layout 1</h4>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="col-box">50% ,100%</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="col-box">50% ,100%</div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                    <div class="col-box" style="background-color: #808080;">50% ,100%</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="col-box" style="background-color: #808080;">50% ,100%</div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-section">
+            <h4>Layout 2</h4>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="col-box">Column 1</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="col-box">Column 2</div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="col-box">Column 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-section">
+            <h4>Layout 3</h4>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="col-box">Column 1</div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="col-box">Column 2</div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-section">
+            <h4>Layout 4</h4>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card-custom">
+                        <div class="card-num">01</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn-custom">Read more...</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card-custom">
+                        <div class="card-num">02</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <button class="btn-custom">Read more...</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card-custom">
+                        <div class="card-num">03</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn-custom">Read more...</button>
+                    </div>
+</body>
+</html>
